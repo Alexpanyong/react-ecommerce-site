@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./SelectedBook.scss";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import * as actions from "../../store/actions/actions";
 import Button from "../../components/Button/Button";
@@ -12,14 +12,15 @@ const SelectedBook = (props) => {
   const { selectedBook } = props.app;
 
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleAddToCart = () => {
     dispatch(actions.addToCart(selectedBook));
   };
 
-  const handleBuyNow = async () => {
-    await dispatch(actions.addToCart(selectedBook));
-    window.location.href = process.env.PUBLIC_URL + routerPathNames.Cart;
+  const handleBuyNow = () => {
+    dispatch(actions.addToCart(selectedBook));
+    history.push(routerPathNames.Cart);
   };
 
   useEffect(() => {
