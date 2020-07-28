@@ -47,7 +47,7 @@ function App(props) {
 
   return (
     <div id="AppContainer" className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <TopBar {...topBarProps} />
         <Switch>
           <Route exact path={routerPathNames.Home}>
