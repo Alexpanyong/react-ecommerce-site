@@ -4,11 +4,12 @@ import { Link, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import * as actions from "../../store/actions/actions";
 import Button from "../../components/Button/Button";
+import { pageNames } from "../../shared/config/pageNames";
 import { routerPathNames } from "../../shared/config/routerPathNames";
 
 const SelectedBook = (props) => {
   console.log("SelectedBook - props", props);
-  const { showMobileMenu, toggleMobileMenu, handleGoToHomepage } = props;
+  const { handleSetCurrentPage, showMobileMenu, toggleMobileMenu, handleGoToHomepage } = props;
   const { selectedBook } = props.app;
 
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const SelectedBook = (props) => {
 
   const handleBuyNow = () => {
     dispatch(actions.addToCart(selectedBook));
+    handleSetCurrentPage(pageNames.Cart);
     history.push(routerPathNames.Cart);
   };
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./MyOrders.scss";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { isEmpty } from "lodash";
 import { useDispatch } from "react-redux";
 import * as actions from "../../store/actions/actions";
@@ -14,6 +14,12 @@ const MyOrders = (props) => {
   const { myOrders, selectedBook } = props.app;
 
   const dispatch = useDispatch();
+  const history = useHistory();
+
+  const handleGoBackToHome = () => {
+    handleGoToHomepage();
+    history.push(routerPathNames.Home);
+  };
 
   const handleClearRecords = () => {
     dispatch(actions.clearOrderRecords());
@@ -30,11 +36,13 @@ const MyOrders = (props) => {
       {isEmpty(myOrders) 
         ? (<div className="emptyOrderInfo">
             Your order records is clean.
-            <div className="emptyOrderBackToHome"><Link to={routerPathNames.Home} onClick={handleGoToHomepage}>Go back</Link></div>
+            <div className="emptyOrderBackToHome">
+              <Button text="Go back" handleClick={handleGoBackToHome} />
+            </div>
           </div>)
         : (myOrders.map(item => <OrderedItem key={item.id} item={item} />))
       }
-      {!isEmpty(myOrders) && <Button text="Clear records" handleClick={handleClearRecords}/>}
+      {!isEmpty(myOrders) && <Button text="Clear records" handleClick={handleClearRecords} />}
     </div>
   );
 };

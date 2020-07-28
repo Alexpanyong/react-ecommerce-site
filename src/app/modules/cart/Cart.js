@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Cart.scss";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { isEmpty } from "lodash";
 import { useDispatch } from "react-redux";
 import * as actions from "../../store/actions/actions";
 import Button from "../../components/Button/Button";
+import { pageNames } from "../../shared/config/pageNames";
 import { routerPathNames } from "../../shared/config/routerPathNames";
 import ShoppingBagItem from "../../components/ShoppingBagItem/ShoppingBagItem";
 import { TAX_AMOUNT, SHIPPING_CHARGE_AMOUNT } from "../../shared/config/config";
 
 const Cart = (props) => {
   console.log("Cart - props", props);
-  const { resetSelectedBookState, handleGoToHomepage } = props;
+  const { handleSetCurrentPage, resetSelectedBookState, handleGoToHomepage } = props;
   const { cart, selectedBook } = props.app;
 
   const taxAmount = TAX_AMOUNT;
@@ -22,7 +23,13 @@ const Cart = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
 
+  const handleGoBackToHome = () => {
+    handleGoToHomepage();
+    history.push(routerPathNames.Home);
+  };
+
   const handleCancel = () => {
+    handleSetCurrentPage(pageNames.Home);
     history.push(routerPathNames.Home);
   };
 
@@ -65,6 +72,7 @@ const Cart = (props) => {
     const _itemsToCheckout = cart.map(item => ({...item, ordertime: `${_day} ${_month} ${_year}`}));
     dispatch(actions.checkOut(_itemsToCheckout));
     dispatch(actions.clearCart());
+    handleSetCurrentPage(pageNames.MyOrders);
     history.push(routerPathNames.MyOrders);
   };
 
@@ -98,7 +106,10 @@ const Cart = (props) => {
       {isEmpty(cart) 
         ? (<div className="emptyCartInfo">
               Your cart is empty.
-              <div className="emptyCartBackToHome"><Link to={routerPathNames.Home} onClick={handleGoToHomepage}>Go back</Link></div>
+              <div className="emptyCartBackToHome">
+                {/* <Link to={routerPathNames.Home} onClick={handleGoToHomepage}>Go back</Link> */}
+                <Button text="Go back" handleClick={handleGoBackToHome} />
+              </div>
             </div>)
         : (<div className="cartContainer">
             <div className="cartLeftPart">
