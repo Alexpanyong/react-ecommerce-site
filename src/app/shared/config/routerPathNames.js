@@ -3,5 +3,5 @@ export const routerPathNames = {
   Home: "/",
   Detail: "/detail",
   MyOrders: "/myorders",
-  Cart: "/cart",
+  Cart: "/mycart",
 };
