@@ -144,10 +144,6 @@
   .topBarNav .mobileMenu #home {
     display: none;
   }
-
-  .topBarNav .mobileMenu .cartItemsNumber {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -191,5 +187,9 @@
 
   .topBarNav .mobileMenu li {
     display: block;
+  }
+
+  .topBarNav .navLink {
+    display: inline-block;
   }
 }

@@ -13,6 +13,7 @@
     background-color: $primary_summer_sky;
     border: 1px solid $primary_summer_sky;
     text-transform: uppercase;
+    font-weight: $font-weight-semi-bold;
     @include border-radius(20px);
 
     &:hover {

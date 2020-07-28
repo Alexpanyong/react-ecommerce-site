@@ -13,7 +13,7 @@ const TopbarNav = ({ currentPage, cart, handleSetCurrentPage, showMobileMenu, to
             <div className="iconStroke" id="stroke01"></div>
             <div className="iconStroke" id="stroke02"></div>
           </div>
-          {cart.length > 0 && <span className="cartItemsNumber" id="cartIndicatorMobile">{cart.length}</span>}
+          {cart.length > 0 && !showMobileMenu && <span className="cartItemsNumber" id="cartIndicatorMobile">{cart.length}</span>}
         </div>
         <ul className={showMobileMenu ? "mobileMenu" : ""} id="mobileMenu">
           <li
