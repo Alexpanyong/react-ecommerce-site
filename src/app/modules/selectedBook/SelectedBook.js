@@ -19,7 +19,7 @@ const SelectedBook = (props) => {
 
   const handleBuyNow = () => {
     dispatch(actions.addToCart(selectedBook));
-    window.location.replace(routerPathNames.Cart);
+    window.location.href = routerPathNames.Cart;
   };
 
   useEffect(() => {

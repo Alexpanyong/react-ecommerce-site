@@ -1,0 +1,159 @@
+@import '../../style/base/variables.scss';
+@import '../../style/base/mixins.scss';
+
+.cartWrap {
+  position: relative;
+  padding: pxtorem(70) pxtorem(20) pxtorem(20) pxtorem(20);
+}
+
+.emptyCartInfo {
+  text-align: center;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  color: $light_greys_silver;
+}
+
+.emptyCartBackToHome {
+  margin: pxtorem(10) pxtorem(0);
+}
+
+.cartContainer {
+  display: flex;
+}
+
+.sectionTitle {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  padding: pxtorem(8) pxtorem(0);
+}
+
+.cartContainer .cartLeftPart {
+  flex: 2;
+  padding: pxtorem(20);
+  // border: 1px dotted $secondary_bondi_blue;
+}
+
+.addressBox {
+  min-height: pxtorem(300);
+  border: 1px solid $light_greys_silver;
+  @include border-radius(6px);
+}
+
+.addressButtonContainer {
+  text-align: center;
+}
+
+.addressButton {
+  display: inline-block;
+  margin: pxtorem(20) pxtorem(10) pxtorem(0) pxtorem(10);
+}
+
+.cartContainer .cartRightPart {
+  flex: 2;
+  padding: pxtorem(20);
+  // border: 1px dotted $secondary_bondi_blue;
+}
+
+.selectedBooksBox {
+  position: relative;
+  min-height: pxtorem(300);
+  margin-bottom: pxtorem(20);
+  border: 1px solid $light_greys_silver;
+  @include border-radius(6px);
+}
+
+.paymentInfo {
+  position: relative;
+  // min-height: pxtorem(300);
+  padding: pxtorem(10) pxtorem(20);
+  margin-bottom: pxtorem(20);
+  background-color: $white;
+  border: 1px solid $light_greys_silver;
+  @include border-radius(6px);
+}
+
+.paymentInfoItem {
+  position: relative;
+  margin: pxtorem(10) pxtorem(0);
+
+  .itemName {
+    display: inline-block;
+  }
+
+  .priceValue {
+    display: inline-block;
+    position: absolute;
+    right: pxtorem(0);
+  }
+}
+
+.paymentInfoItem#totalPrice {
+  position: relative;
+  padding: pxtorem(10) pxtorem(0);
+  margin: pxtorem(20) pxtorem(0);
+  border-top: 2px dashed $light_greys_silver;
+}
+
+.paymentButtonContainer {
+  text-align: right;
+}
+
+.paymentButton {
+  display: inline-block;
+  margin: pxtorem(10) pxtorem(10);
+}
+
+.paymentButton:last-child {
+  margin-right: pxtorem(0);
+}
+
+
+@media only screen and (max-width: 2048px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 680px) {
+  .cartContainer {
+    display: block;
+  }
+
+  .cartContainer .cartLeftPart {
+    flex: none;
+    width: 100%;
+  }
+
+  .cartContainer .cartRightPart {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .paymentButtonContainer {
+    text-align: center;
+  }
+
+  .paymentButton:last-child {
+    margin-right: pxtorem(10);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+}

@@ -1,0 +1,17 @@
+@import '../../style/base/variables.scss';
+
+.myOrdersWrap {
+  position: relative;
+  padding: pxtorem(70) pxtorem(20) pxtorem(20) pxtorem(20);
+}
+
+.emptyOrderInfo {
+  text-align: center;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  color: $light_greys_silver;
+}
+
+.emptyOrderBackToHome {
+  margin: pxtorem(10) pxtorem(0);
+}
