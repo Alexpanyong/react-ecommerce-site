@@ -41,9 +41,9 @@ function App(props) {
 
   const topBarProps = { ...app, handleSetCurrentPage, showMobileMenu, toggleMobileMenu, handleGoToHomepage };
   const homeProps = { ...props, resetSelectedBookState };
-  const selectedBookProps = { ...props, showMobileMenu, toggleMobileMenu, handleGoToHomepage };
+  const selectedBookProps = { ...props, handleSetCurrentPage, showMobileMenu, toggleMobileMenu, handleGoToHomepage };
   const myOrdersProps = { ...props, resetSelectedBookState, handleGoToHomepage };
-  const cartProps = { ...props, resetSelectedBookState, handleGoToHomepage };
+  const cartProps = { ...props, handleSetCurrentPage, resetSelectedBookState, handleGoToHomepage };
 
   return (
     <div id="AppContainer" className="App">
