@@ -17,9 +17,9 @@ const SelectedBook = (props) => {
     dispatch(actions.addToCart(selectedBook));
   };
 
-  const handleBuyNow = () => {
-    dispatch(actions.addToCart(selectedBook));
-    window.location.href = routerPathNames.Cart;
+  const handleBuyNow = async () => {
+    await dispatch(actions.addToCart(selectedBook));
+    window.location.href = process.env.PUBLIC_URL + routerPathNames.Cart;
   };
 
   useEffect(() => {
