@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Cart.scss";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { isEmpty } from "lodash";
 import { useDispatch } from "react-redux";
 import * as actions from "../../store/actions/actions";
@@ -20,9 +20,10 @@ const Cart = (props) => {
   const [consolidatedPrice, setConsolidatedPrice] = useState(0);
 
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleCancel = () => {
-    window.location.href = process.env.PUBLIC_URL + routerPathNames.Home;
+    history.push(routerPathNames.Home);
   };
 
   const getMonthString = (month) => {
@@ -56,15 +57,15 @@ const Cart = (props) => {
     }
   };
 
-  const handleCheckOut = async () => {
+  const handleCheckOut = () => {
     const _dateObj = new Date();
     const _day = _dateObj.getDate();
     const _month = getMonthString(_dateObj.getMonth());
     const _year = _dateObj.getFullYear();
     const _itemsToCheckout = cart.map(item => ({...item, ordertime: `${_day} ${_month} ${_year}`}));
-    await dispatch(actions.checkOut(_itemsToCheckout));
-    await dispatch(actions.clearCart());
-    window.location.href = process.env.PUBLIC_URL + routerPathNames.MyOrders;
+    dispatch(actions.checkOut(_itemsToCheckout));
+    dispatch(actions.clearCart());
+    history.push(routerPathNames.MyOrders);
   };
 
   const handleDeleteItem = (item = {}) => {
