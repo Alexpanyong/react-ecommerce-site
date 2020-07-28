@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import * as actions from "../../store/actions/actions";
 import Button from "../../components/Button/Button";
 import OrderedItem from "../../components/OrderedItem/OrderedItem";
+import { routerPathNames } from "../../shared/config/routerPathNames";
 
 const MyOrders = (props) => {
   console.log("MyOrders - props", props);
@@ -29,7 +30,7 @@ const MyOrders = (props) => {
       {isEmpty(myOrders) 
         ? (<div className="emptyOrderInfo">
             Your order records is clean.
-            <div className="emptyOrderBackToHome"><Link to="/" onClick={handleGoToHomepage}>Go back</Link></div>
+            <div className="emptyOrderBackToHome"><Link to={routerPathNames.Home} onClick={handleGoToHomepage}>Go back</Link></div>
           </div>)
         : (myOrders.map(item => <OrderedItem key={item.id} item={item} />))
       }

@@ -97,7 +97,7 @@ const Cart = (props) => {
       {isEmpty(cart) 
         ? (<div className="emptyCartInfo">
               Your cart is empty.
-              <div className="emptyCartBackToHome"><Link to="/" onClick={handleGoToHomepage}>Go back</Link></div>
+              <div className="emptyCartBackToHome"><Link to={routerPathNames.Home} onClick={handleGoToHomepage}>Go back</Link></div>
             </div>)
         : (<div className="cartContainer">
             <div className="cartLeftPart">

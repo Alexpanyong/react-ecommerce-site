@@ -32,7 +32,7 @@ const SelectedBook = (props) => {
     <div className="selectedBookWrap">
       {selectedBook 
         ? (<div key={selectedBook.id}>
-            <div className="breadcrumb"><Link to="/" onClick={handleGoToHomepage}>{`<- Back`}</Link></div>
+            <div className="breadcrumb"><Link to={routerPathNames.Home} onClick={handleGoToHomepage}>{`<- Back`}</Link></div>
             <div className="detailContainer">
               <div className="detailLeftPart">
                 <div className="detailImage"><img src={selectedBook.image} alt={selectedBook.title} /></div>
@@ -55,7 +55,7 @@ const SelectedBook = (props) => {
           </div>)
         : (<div className="emptyDetailInfo">
             Oops, you haven't selected a book.
-            <div className="emptyDetailBackToHome"><Link to="/" onClick={handleGoToHomepage}>Go to homepage</Link></div>
+            <div className="emptyDetailBackToHome"><Link to={routerPathNames.Home} onClick={handleGoToHomepage}>Go to homepage</Link></div>
           </div>)
       }
     </div>

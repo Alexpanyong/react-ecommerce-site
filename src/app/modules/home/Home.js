@@ -22,7 +22,7 @@ const Home = (props) => {
   useEffect(() => {
     if (isEmpty(booksData)) return;
     console.log("Home - booksData", booksData);
-    if (booksData.books) {
+    if (books) {
       const _books = booksData.books.map(book => ({id: Math.random(), ...book}));
       console.log("Home - bookList", _books);
       setBookList(_books);
