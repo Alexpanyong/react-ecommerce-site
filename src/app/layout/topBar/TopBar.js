@@ -32,7 +32,7 @@ const TopBar = (props) => {
   return (
     <div className="topBarWrap">
       <div className="logo">
-        <Link className="logoLink" to="/" onClick={handleGoToHomepage} >
+        <Link className="logoLink" to={routerPathNames.Home} onClick={handleGoToHomepage} >
           eCommerce Site
         </Link>
       </div>
