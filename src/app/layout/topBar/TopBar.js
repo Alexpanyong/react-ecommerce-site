@@ -33,7 +33,7 @@ const TopBar = (props) => {
     <div className="topBarWrap">
       <div className="logo">
         <Link className="logoLink" to={routerPathNames.Home} onClick={handleGoToHomepage} >
-          eCommerce Site
+          eCommerce
         </Link>
       </div>
       <div className="selectedBookTitle">{`${selectedBook ? `${selectedBook.title}` : ""}`}</div>
