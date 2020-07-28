@@ -22,7 +22,7 @@ const Cart = (props) => {
   const dispatch = useDispatch();
 
   const handleCancel = () => {
-    window.location.href = routerPathNames.Home;
+    window.location.href = process.env.PUBLIC_URL + routerPathNames.Home;
   };
 
   const getMonthString = (month) => {
@@ -56,15 +56,15 @@ const Cart = (props) => {
     }
   };
 
-  const handleCheckOut = () => {
+  const handleCheckOut = async () => {
     const _dateObj = new Date();
     const _day = _dateObj.getDate();
     const _month = getMonthString(_dateObj.getMonth());
     const _year = _dateObj.getFullYear();
     const _itemsToCheckout = cart.map(item => ({...item, ordertime: `${_day} ${_month} ${_year}`}));
-    dispatch(actions.checkOut(_itemsToCheckout));
-    dispatch(actions.clearCart());
-    window.location.href = routerPathNames.MyOrders;
+    await dispatch(actions.checkOut(_itemsToCheckout));
+    await dispatch(actions.clearCart());
+    window.location.href = process.env.PUBLIC_URL + routerPathNames.MyOrders;
   };
 
   const handleDeleteItem = (item = {}) => {
