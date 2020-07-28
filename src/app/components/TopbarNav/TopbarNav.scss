@@ -1,0 +1,195 @@
+@import '../../style/base/variables.scss';
+@import '../../style/base/mixins.scss';
+
+.topBarNav {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  float: right;
+  margin: auto pxtorem(20) auto auto;
+  max-height: 100%;
+  height: 100%;
+}
+
+.mobileMenuButton {
+  display: none;
+  position: relative;
+  height: 100%;
+  vertical-align: top;
+  // border: 1px dotted $white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mobileMenuIcon {
+  position: relative;
+  height: 100%;
+  padding: pxtorem(10);
+}
+
+.mobileMenuIcon {
+  .iconStroke {
+    position: relative;
+    width: pxtorem(20);
+    height: pxtorem(2);
+    background-color: $white;
+  }
+}
+
+.iconStroke#stroke01 {
+  top: pxtorem(10);
+}
+
+.iconStroke#stroke02 {
+  top: pxtorem(14);
+}
+
+.topBarNav ul {
+  display: inline-block;
+  height: 100%;
+}
+
+.topBarNav ul li {
+  display: inline-block;
+  list-style-type: none;
+  height: 100%;
+}
+
+.topBarNav .navItem {
+  height: 100%;
+
+  &:hover a {
+    color: $text_white;
+  }
+}
+
+.topBarNav .navLink {
+  display: block;
+  position: relative;
+  font-weight: $font-weight-semi-bold;
+  line-height: pxtorem(50);
+  margin: 0 pxtorem(10);
+}
+
+.highlighted {
+  // border-bottom: 2px $text_white solid;
+
+  a {
+    color: $text_white;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.cartItemsNumber {
+  display: block;
+  position: absolute;
+  float: right;
+  top: pxtorem(4);
+  right: pxtorem(-6);
+  font-size: $font-size-tiny;
+  font-weight: $font-weight-bold;
+  line-height: 1em;
+  padding: pxtorem(2) pxtorem(4);
+  color: $primary_summer_sky;
+  background-color: $white;
+  @include border-radius(6px);
+}
+
+.cartItemsNumber#cartIndicatorMobile {
+  right: pxtorem(0);
+}
+
+
+@media only screen and (max-width: 2048px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .topBarNav {
+    position: initial;
+  }
+
+  .topBarNav .mobileMenuButton {
+    display: inline-block;
+  }
+
+  .topBarNav ul {
+    display: none;
+  }
+
+  .selectedBookTitle {
+    max-width: pxtorem(600);
+  }
+
+  .topBarNav .mobileMenu {
+    display: inline-block;
+    position: absolute;
+    top: pxtorem(50);
+    right: pxtorem(0);
+    width: 100%;
+    padding: pxtorem(0) pxtorem(20);
+    text-align: right;
+    background-color: $primary_summer_sky;
+  }
+
+  .topBarNav .mobileMenu #home {
+    display: none;
+  }
+
+  .topBarNav .mobileMenu .cartItemsNumber {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .selectedBookTitle {
+    top: pxtorem(0);
+    max-width: pxtorem(460);
+    font-size: $font-size-base;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .selectedBookTitle {
+    max-width: pxtorem(360);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .selectedBookTitle {
+    max-width: pxtorem(260);
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .selectedBookTitle {
+    max-width: pxtorem(180);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .selectedBookTitle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .topBarNav .mobileMenu {
+    height: auto;
+    text-align: center;
+    padding: pxtorem(0);
+  }
+
+  .topBarNav .mobileMenu li {
+    display: block;
+  }
+}

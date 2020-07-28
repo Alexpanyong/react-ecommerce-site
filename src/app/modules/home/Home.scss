@@ -1,0 +1,15 @@
+@import '../../style/base/variables.scss';
+
+.homeWrap {
+  position: relative;
+  padding: pxtorem(70) pxtorem(20) pxtorem(20) pxtorem(20);
+}
+
+.bookList {
+  text-align: center;
+
+  .itemBook {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

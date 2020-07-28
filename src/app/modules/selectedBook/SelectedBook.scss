@@ -1,0 +1,122 @@
+@import '../../style/base/variables.scss';
+
+.breadcrumb {
+  font-weight: $font-weight-semi-bold;
+  padding: pxtorem(10);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.selectedBookWrap {
+  position: relative;
+  padding: pxtorem(70) pxtorem(20) pxtorem(20) pxtorem(20);
+}
+
+.emptyDetailInfo {
+  text-align: center;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  color: $light_greys_silver;
+}
+
+.emptyDetailBackToHome {
+  margin: pxtorem(10) pxtorem(0);
+}
+
+.detailContainer {
+  display: flex;
+}
+
+.detailContainer .detailLeftPart {
+  flex: 1;
+  // border: 1px dotted $secondary_bondi_blue;
+
+  .detailImage {
+    text-align: center;
+  }
+}
+
+.detailContainer .detailRightPart {
+  flex: 3;
+  padding: pxtorem(20);
+  // border: 1px dotted $secondary_bondi_blue;
+}
+
+.detailTitle,
+.detailPrice,
+.detailIsbn,
+.detailDescription {
+  position: relative;
+  margin: pxtorem(10) pxtorem(0);
+}
+
+.detailTitle {
+  line-height: 1.2em;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  padding: pxtorem(8) pxtorem(0);
+  border-bottom: 3px solid $primary_summer_sky;
+}
+
+.detailDescription {
+  margin: pxtorem(20) pxtorem(0);
+  padding: pxtorem(10) pxtorem(0);
+  border-top: 2px dashed $light_greys_silver;
+  border-bottom: 2px dashed $light_greys_silver;
+}
+
+.detailButton {
+  display: inline-block;
+  margin-right: pxtorem(20);
+}
+
+
+@media only screen and (max-width: 2048px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 680px) {
+  .detailContainer {
+    display: block;
+  }
+
+  .detailContainer .detailLeftPart {
+    flex: none;
+    width: 100%;
+  }
+
+  .detailContainer .detailRightPart {
+    flex: none;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}

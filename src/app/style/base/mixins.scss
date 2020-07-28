@@ -1,0 +1,151 @@
+/*
+ * helper function that converts rem to px
+ */
+
+@function pxtorem($px, $rem: 16) {
+  @return ($px / $rem)+0rem;
+}
+
+/*
+* helper function that number rem to px
+*/
+
+@function numtopx($px) {
+  @return ($px)+0px;
+}
+
+/**
+* CSS3 Manualpixer
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin text-shadow($shadow...) {
+  text-shadow: $shadow;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform...) {
+  -moz-transform: $transform;
+  -webkit-transform: $transform;
+  -o-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@mixin background-gradient($color1, $color2) {
+  background: $color1;
+  background: -moz-linear-gradient(top, $color2 0%, $color1 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $color2),
+    color-stop(100%, $color1)
+  );
+  background: -webkit-linear-gradient(top, $color2 0%, $color1 100%);
+  background: -o-linear-gradient(top, $color2 0%, $color1 100%);
+  background: -ms-linear-gradient(top, $color2 0%, $color1 100%);
+  background: linear-gradient(to bottom, $color2 0%, $color1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color2, endColorstr=$color1, GradientType=0);
+}
+
+@mixin background-gradient-horizontal($color1, $color2) {
+  background: $color1;
+  background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+  background: linear-gradient(to right, $color1 0%, $color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=1);
+}
+
+@mixin background-gradient-vertical($color1, $color2, $break) {
+  background: $color1;
+  background: -moz-linear-gradient(
+    top,
+    $color2 0%,
+    $color2 $break,
+    $color1 $break,
+    $color1 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $color2),
+    color-stop($break, $color2),
+    color-stop($break, $color1),
+    color-stop(100%, $color1)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    $color2 0%,
+    $color2 $break,
+    $color1 $break,
+    $color1 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    $color2 0%,
+    $color2 $break,
+    $color1 $break,
+    $color1 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    $color2 0%,
+    $color2 $break,
+    $color1 $break,
+    $color1 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    $color2 0%,
+    $color2 $break,
+    $color1 $break,
+    $color1 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color2, endColorstr=$color1, GradientType=0);
+}
+
+@mixin radial-gradient($color1, $break1, $color2, $break2) {
+  background: -moz-radial-gradient(
+    $color1 $break1,
+    $color2 $break2
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    0px,
+    center center,
+    $break2,
+    color-stop($break1, $color1),
+    color-stop($break2, $color2)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(
+    $color1 $break1,
+    $color2 $break2
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(
+    $color1 $break1,
+    $color2 $break2
+  ); /* Opera 12+ */
+  background: -ms-radial-gradient($color1 $break1, $color2 $break2); /* IE10+ */
+  background: radial-gradient($color1 $break1, $color2 $break2); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+

@@ -1,0 +1,39 @@
+@import '~fontsource-nunito-sans/index.css';
+@import './base/variables.scss';
+@import './base/breakpoints.scss';
+@import './base/mixins.scss';
+
+html,
+body {
+  font-family: $font-family-base;
+  background-color: $light_greys_link_water;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: $primary_summer_sky;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: $font-family-base;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+div {
+  display: block;
+  box-sizing: border-box;
+}
+
+:after, :before {
+  box-sizing: inherit;
+}

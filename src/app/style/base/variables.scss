@@ -1,0 +1,53 @@
+$font-family-sans-serif: 'Nunito Sans', Helvetica, Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+
+// A helper function that converts rem to px
+@function pxtorem($px, $rem: 16) {
+  @return ($px / $rem) +0rem;
+}
+
+
+$font-size-base: pxtorem(16);
+$font-size-large: pxtorem(28);
+$font-size-medium: pxtorem(20);
+$font-size-small: pxtorem(12);
+$font-size-tiny: pxtorem(10);
+
+$font-size-h1: pxtorem(30);
+$font-size-h2: pxtorem(24);
+$font-size-h3: pxtorem(20);
+$font-size-h4: pxtorem(16);
+$font-size-h5: pxtorem(12);
+$font-size-h6: pxtorem(10);
+
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+
+
+/*
+* Colors
+*/
+$primary_prussian_blue: #004165;
+$primary_summer_sky: #39bcf3;
+$secondary_bondi_blue: #0089c4;
+$secondary_charlotte: #a3dbe8;
+$secondary_java: #16d4d4;
+$secondary_french_rose: #f24c88;
+$secondary_dark_orange: #ff8800;
+$dark_greys_black: #000000;
+$dark_greys_nero: #262525;
+$dark_greys_dim_grey: #66666c;
+$light_greys_silver: #c3c3c3;
+$light_greys_pattens_blue: #d0dce3;
+$light_greys_link_water: #f5f7f9;
+$light_greys_bright: #d5e5f5;
+$white: #ffffff;
+$text_white: #ffffff;
+$error_color: #ff586B;
+$tooltip_grey_dark: rgba(38, 37, 37, 0.8); 
+

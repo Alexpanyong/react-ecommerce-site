@@ -1,0 +1,97 @@
+@import '../../style/base/variables.scss';
+@import '../../style/base/mixins.scss';
+
+.bookItemWrap {
+  display: inline-block;
+  position: relative;
+  text-align: initial;
+  width: pxtorem(300);
+  padding: pxtorem(10);
+  margin: pxtorem(10);
+  background-color: $white;
+  border: 1px solid #ececec;
+  @include border-radius(6px);
+  @include box-shadow(0 4px 20px -6px #ADADAD);
+}
+
+.bookCoverWrap {
+  position: relative;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+
+  .bookCover {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    border: pxtorem(2) dashed $white;
+    @include transition(all 300ms ease);
+
+    &:hover {
+      cursor: pointer;
+      border: pxtorem(2) dashed $primary_summer_sky;
+      @include border-radius(4px);
+    }
+  
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.bookTitle {
+  max-width: 100%;
+  padding: pxtorem(20);
+  font-weight: $font-weight-bold;
+}
+
+.bookSubtitle {
+  max-width: 100%;
+  padding: 0 pxtorem(20) pxtorem(20) pxtorem(20);
+  // margin-bottom: pxtorem(20);
+  // border: 1px solid #ececec;
+}
+
+
+@media only screen and (max-width: 2048px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 800px) {
+  
+}
+
+@media only screen and (max-width: 680px) {
+  
+}
+
+@media only screen and (max-width: 568px) {
+  
+}
+
+@media only screen and (max-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 320px) {
+  .bookItemWrap {
+    width: pxtorem(280);
+    margin: pxtorem(10) pxtorem(0);
+  }
+}

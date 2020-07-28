@@ -1,0 +1,100 @@
+@import '../../style/base/variables.scss';
+
+.orderedItemWrap {
+  position: relative;
+  margin-bottom: pxtorem(20);
+  background-color: $white;
+  border: 1px solid $light_greys_pattens_blue;
+}
+
+.orderHeader {
+  padding: pxtorem(6) pxtorem(10);
+  background-color: $light_greys_pattens_blue;
+}
+
+.orderTime {
+  display: inline-block;
+}
+
+.orderDetailContainer {
+  display: flex;
+}
+
+.orderImage {
+  flex: 1;
+  vertical-align: top;
+}
+
+.orderDetail {
+  flex: 5;
+  padding: pxtorem(20);
+}
+
+.itemTitle,
+.itemPrice,
+.itemISBN {
+  position: relative;
+  margin: pxtorem(10) pxtorem(0);
+}
+
+.itemTitle {
+  line-height: 1.2em;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+}
+
+.itemPrice {
+
+}
+
+.itemISBN {
+
+}
+
+
+@media only screen and (max-width: 2048px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 800px) {
+  
+}
+
+@media only screen and (max-width: 680px) {
+  .orderDetailContainer {
+    display: block;
+  }
+  
+  .orderImage {
+    flex: none;
+    text-align: center;
+  }
+  
+  .orderDetail {
+    flex: none;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  
+}
+
+@media only screen and (max-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 320px) {
+  
+}

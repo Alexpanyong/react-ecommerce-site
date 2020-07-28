@@ -1,0 +1,8 @@
+@import '../../style/base/variables.scss';
+
+.loadingWrap {
+  position: relative;
+  text-align: center;
+  color: $dark_greys_dim_grey;
+  font-size: $font-size-large;
+}

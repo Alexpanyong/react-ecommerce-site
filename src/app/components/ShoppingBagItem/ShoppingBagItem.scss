@@ -1,0 +1,80 @@
+@import '../../style/base/variables.scss';
+@import '../../style/base/mixins.scss';
+
+.shoppingBagItemWrap {
+  display: flex;
+  position: relative;
+  margin: pxtorem(6) pxtorem(0);
+  padding: pxtorem(10) pxtorem(20);
+  background-color: $white;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  @include transition(all 300ms ease);
+
+  &:hover {
+    border-top: 1px dashed $light_greys_silver;
+    border-bottom: 1px dashed $light_greys_silver;
+    border-left: 4px solid $primary_summer_sky;
+  }
+}
+
+.shoppingItemDetail {
+  display: inline-block;
+  position: relative;
+  flex: 6;
+  // border: 1px dotted #f00;
+}
+
+.shoppingItemName,
+.shoppingItemPrice {
+  margin: pxtorem(4) pxtorem(0);
+}
+
+.shoppingItemName {
+  font-weight: $font-weight-bold;
+}
+
+.shoppingItemAction {
+  display: inline-block;
+  position: relative;
+  flex: 1;
+  min-width: pxtorem(34);
+  text-align: right;
+  // border: 1px dotted #f00;
+}
+
+.itemActionDelete {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: pxtorem(0);
+  width: pxtorem(28);
+  height: pxtorem(28);
+  background-color: $light_greys_pattens_blue;
+  border: 1px solid $light_greys_pattens_blue;
+  @include border-radius(15px);
+  @include transform(translateY(-50%));
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .deleteBtnStroke {
+    display: block;
+    position: absolute;
+    top: pxtorem(12);
+    left: pxtorem(6);
+    width: pxtorem(14);
+    height: pxtorem(2);
+    background-color: $white;
+    @include transform(rotate(0deg));
+  }
+
+  .deleteBtnStroke#stroke01 {
+    @include transform(rotate(45deg));
+  }
+
+  .deleteBtnStroke#stroke02 {
+    @include transform(rotate(-45deg));
+  }
+}

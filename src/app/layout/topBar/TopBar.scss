@@ -1,0 +1,96 @@
+@import '../../style/base/variables.scss';
+@import '../../style/base/mixins.scss';
+
+.topBarWrap {
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  height: pxtorem(50);
+  background-color: $primary_summer_sky;
+  z-index: 1000;
+}
+
+.topBarWrap a {
+  text-decoration: none;
+  color: $light_greys_bright;
+}
+
+.topBarWrap .logo {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  font-size: $font-size-large;
+  line-height: pxtorem(50);
+  margin-left: pxtorem(20);
+  margin-right: pxtorem(20);
+
+  .logoLink {
+    color: $white;
+  }
+}
+
+.selectedBookTitle {
+  display: inline-block;
+  position: relative;
+  top: pxtorem(2);
+  max-width: pxtorem(800);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: $font-size-medium;
+  line-height: 1em;
+  font-weight: $font-weight-semi-bold;
+  margin: auto pxtorem(10);
+}
+
+
+
+@media only screen and (max-width: 2048px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .topBarWrap .selectedBookTitle {
+    max-width: pxtorem(600);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .topBarWrap .selectedBookTitle {
+    top: pxtorem(0);
+    max-width: pxtorem(460);
+    font-size: $font-size-base;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .topBarWrap .selectedBookTitle {
+    max-width: pxtorem(360);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .topBarWrap .selectedBookTitle {
+    max-width: pxtorem(240);
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .topBarWrap .selectedBookTitle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 320px) {
+  .topBarWrap .logo {
+    font-size: $font-size-medium;
+  }
+}
