@@ -1,0 +1,246 @@
+{
+  "error": "0",
+  "total": "30",
+  "books": [
+    {
+        "title": "Hacking Exposed Windows, 3rd Edition",
+        "subtitle": "Microsoft Windows Security Secrets and Solutions",
+        "isbn13": "9780071494267",
+        "price": "$6.99",
+        "image": "https://itbook.store/img/books/9780071494267.png",
+        "url": "https://itbook.store/books/9780071494267"
+    },
+    {
+        "title": "Windows PowerShell Cookbook",
+        "subtitle": "for Windows, Exchange 2007, and MOM V3",
+        "isbn13": "9780596528492",
+        "price": "$3.43",
+        "image": "https://itbook.store/img/books/9780596528492.png",
+        "url": "https://itbook.store/books/9780596528492"
+    },
+    {
+        "title": "Microsoft Windows XP Networking and Security Inside Out",
+        "subtitle": "Also Covers Windows 2000",
+        "isbn13": "9780735620421",
+        "price": "$2.90",
+        "image": "https://itbook.store/img/books/9780735620421.png",
+        "url": "https://itbook.store/books/9780735620421"
+    },
+    {
+        "title": "Microsoft Windows XP Professional, 3rd Edition",
+        "subtitle": "Resource Kit",
+        "isbn13": "9780735621671",
+        "price": "$18.99",
+        "image": "https://itbook.store/img/books/9780735621671.png",
+        "url": "https://itbook.store/books/9780735621671"
+    },
+    {
+        "title": "Inside Windows Debugging",
+        "subtitle": "A Practical Guide to Debugging and Tracing Strategies in Windows",
+        "isbn13": "9780735662780",
+        "price": "$35.99",
+        "image": "https://itbook.store/img/books/9780735662780.png",
+        "url": "https://itbook.store/books/9780735662780"
+    },
+    {
+        "title": "Windows Phone 7 Development Internals",
+        "subtitle": "Covers Windows Phone 7 and Windows Phone 7.5",
+        "isbn13": "9780735663251",
+        "price": "$5.38",
+        "image": "https://itbook.store/img/books/9780735663251.png",
+        "url": "https://itbook.store/books/9780735663251"
+    },
+    {
+        "title": "Windows Internals, Part 2, 6th Edition",
+        "subtitle": "Covering Windows Server 2008 R2 and Windows 7",
+        "isbn13": "9780735665873",
+        "price": "$31.99",
+        "image": "https://itbook.store/img/books/9780735665873.png",
+        "url": "https://itbook.store/books/9780735665873"
+    },
+    {
+        "title": "Windows Mobile Game Development",
+        "subtitle": "Building games for the Windows Phone and other mobile devices",
+        "isbn13": "9781430229285",
+        "price": "$3.99",
+        "image": "https://itbook.store/img/books/9781430229285.png",
+        "url": "https://itbook.store/books/9781430229285"
+    },
+    {
+        "title": "Designing for Windows 8",
+        "subtitle": "Fundamentals of Great Design in Windows Store Apps",
+        "isbn13": "9781430249597",
+        "price": "$19.99",
+        "image": "https://itbook.store/img/books/9781430249597.png",
+        "url": "https://itbook.store/books/9781430249597"
+    },
+    {
+        "title": "Real World Windows 8 App Development with JavaScript",
+        "subtitle": "Create Great Windows Store Apps",
+        "isbn13": "9781430250807",
+        "price": "$5.01",
+        "image": "https://itbook.store/img/books/9781430250807.png",
+        "url": "https://itbook.store/books/9781430250807"
+    },
+    {
+      "title": "Windows 8 and Windows Phone 8 Game Development",
+      "subtitle": "Create captivating games for all Windows 8 devices in C#",
+      "isbn13": "9781430258360",
+      "price": "$31.05",
+      "image": "https://itbook.store/img/books/9781430258360.png",
+      "url": "https://itbook.store/books/9781430258360"
+    },
+    {
+        "title": "Windows Server 2012: Up and Running",
+        "subtitle": "Upgrading, Installing, and Optimizing Windows Server 2012",
+        "isbn13": "9781449320751",
+        "price": "$33.96",
+        "image": "https://itbook.store/img/books/9781449320751.png",
+        "url": "https://itbook.store/books/9781449320751"
+    },
+    {
+        "title": "Programming Windows Store Apps with C#",
+        "subtitle": "Master WinRT, XAML,  and C# to create innovative Windows 8 applications",
+        "isbn13": "9781449320850",
+        "price": "$7.58",
+        "image": "https://itbook.store/img/books/9781449320850.png",
+        "url": "https://itbook.store/books/9781449320850"
+    },
+    {
+        "title": "Releasing HTML5 Games for Windows 8",
+        "subtitle": "From the Web to Windows 8 from with ease",
+        "isbn13": "9781449360504",
+        "price": "$16.99",
+        "image": "https://itbook.store/img/books/9781449360504.png",
+        "url": "https://itbook.store/books/9781449360504"
+    },
+    {
+        "title": "Windows 10 Revealed",
+        "subtitle": "The Universal Windows Operating System for PC, Tablets, and Windows Phone",
+        "isbn13": "9781484206874",
+        "price": "$18.24",
+        "image": "https://itbook.store/img/books/9781484206874.png",
+        "url": "https://itbook.store/books/9781484206874"
+    },
+    {
+        "title": "The Windows 10 Accessibility Handbook",
+        "subtitle": "Supporting Windows Users with Special Visual, Auditory, Motor, and Cognitive Needs",
+        "isbn13": "9781484217320",
+        "price": "$19.99",
+        "image": "https://itbook.store/img/books/9781484217320.png",
+        "url": "https://itbook.store/books/9781484217320"
+    },
+    {
+        "title": "Managing Windows Servers with Chef",
+        "subtitle": "Harness the power of Chef to automate management of Windows-based systems using hands-on examples",
+        "isbn13": "9781783982424",
+        "price": "$13.99",
+        "image": "https://itbook.store/img/books/9781783982424.png",
+        "url": "https://itbook.store/books/9781783982424"
+    },
+    {
+        "title": "Windows Malware Analysis Essentials",
+        "subtitle": "Master the fundamentals of malware analysis for the Windows platform and enhance your anti-malware skill set",
+        "isbn13": "9781785281518",
+        "price": "$49.99",
+        "image": "https://itbook.store/img/books/9781785281518.png",
+        "url": "https://itbook.store/books/9781785281518"
+    },
+    {
+        "title": "Kali Linux 2018: Windows Penetration Testing, 2nd Edition",
+        "subtitle": "Conduct network testing, surveillance, and pen testing on MS Windows using Kali Linux 2018",
+        "isbn13": "9781788997461",
+        "price": "$49.99",
+        "image": "https://itbook.store/img/books/9781788997461.png",
+        "url": "https://itbook.store/books/9781788997461"
+    },
+    {
+        "title": "Windows Server 2016 Security, Certificates, and Remote Access Cookbook",
+        "subtitle": "Recipe-based guide for security, networking and PKI in Windows Server 2016",
+        "isbn13": "9781789137675",
+        "price": "$23.99",
+        "image": "https://itbook.store/img/books/9781789137675.png",
+        "url": "https://itbook.store/books/9781789137675"
+    },
+    {
+      "title": "Microsoft SharePoint 2010 Enterprise Applications on Windows Phone 7",
+      "subtitle": "Create enterprise-ready websites and applications that access Microsoft SharePoint on Windows Phone 7",
+      "isbn13": "9781849682589",
+      "price": "$25.12",
+      "image": "https://itbook.store/img/books/9781849682589.png",
+      "url": "https://itbook.store/books/9781849682589"
+    },
+    {
+        "title": "Microsoft Windows Intune 2.0: Quickstart Administration",
+        "subtitle": "Manage your PCs in the Enterprise through the Cloud with Microsoft Windows Intune",
+        "isbn13": "9781849682961",
+        "price": "$29.99",
+        "image": "https://itbook.store/img/books/9781849682961.png",
+        "url": "https://itbook.store/books/9781849682961"
+    },
+    {
+        "title": "Developing Windows Store Apps with HTML5 and JavaScript",
+        "subtitle": "Learn the key concepts of developing Windows Store apps using HTML5 and JavaScript",
+        "isbn13": "9781849687102",
+        "price": "$14.99",
+        "image": "https://itbook.store/img/books/9781849687102.png",
+        "url": "https://itbook.store/books/9781849687102"
+    },
+    {
+        "title": "Windows Phone 7.5 Application Development with F#",
+        "subtitle": "Develop amazing applications for Windows Phone using F#",
+        "isbn13": "9781849687843",
+        "price": "$14.99",
+        "image": "https://itbook.store/img/books/9781849687843.png",
+        "url": "https://itbook.store/books/9781849687843"
+    },
+    {
+        "title": "Windows Server 2012 Unified Remote Access Planning and Deployment",
+        "subtitle": "Discover how to seamlessly plan and deploy remote access with Windows Server 2012's successor to DirectAccess",
+        "isbn13": "9781849688284",
+        "price": "$12.43",
+        "image": "https://itbook.store/img/books/9781849688284.png",
+        "url": "https://itbook.store/books/9781849688284"
+    },
+    {
+        "title": "Windows Server 2012 Automation with PowerShell Cookbook",
+        "subtitle": "Over 110 recipes to automate Windows Server administrative tasks by using PowerShell",
+        "isbn13": "9781849689465",
+        "price": "$29.99",
+        "image": "https://itbook.store/img/books/9781849689465.png",
+        "url": "https://itbook.store/books/9781849689465"
+    },
+    {
+        "title": "Mastering Windows 8 C++ App Development",
+        "subtitle": "A practical guide to developing Windows Store apps with C++ and XAML",
+        "isbn13": "9781849695022",
+        "price": "$29.99",
+        "image": "https://itbook.store/img/books/9781849695022.png",
+        "url": "https://itbook.store/books/9781849695022"
+    },
+    {
+        "title": "Windows Phone 8 Application Development Essentials",
+        "subtitle": "A practical guide to creating a Windows Phone 8 application using C#, XAML, and MVVM",
+        "isbn13": "9781849696760",
+        "price": "$19.99",
+        "image": "https://itbook.store/img/books/9781849696760.png",
+        "url": "https://itbook.store/books/9781849696760"
+    },
+    {
+        "title": "Windows Server 2019 Inside Out",
+        "subtitle": "",
+        "isbn13": "9780135492277",
+        "price": "$69.99",
+        "image": "https://itbook.store/img/books/9780135492277.png",
+        "url": "https://itbook.store/books/9780135492277"
+    },
+    {
+        "title": "Exam Ref MD-100 Windows 10",
+        "subtitle": "",
+        "isbn13": "9780135560594",
+        "price": "$26.99",
+        "image": "https://itbook.store/img/books/9780135560594.png",
+        "url": "https://itbook.store/books/9780135560594"
+    }
+  ]
+}

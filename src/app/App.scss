@@ -1,0 +1,35 @@
+@import './style/default.scss';
+@import './style/base/variables.scss';
+
+.App {
+  padding: 0;
+
+  .title {
+    color: $secondary_bondi_blue;
+  }
+  
+}
+
+.App div {
+    box-sizing: border-box;
+  }
+
+.topBarWrap {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: pxtorem(50);
+  background-color: $primary_summer_sky;
+  color: $text_white;
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+
+  img {
+    display: block;
+    margin: pxtorem(10) pxtorem(10) auto pxtorem(20);
+  }
+}
