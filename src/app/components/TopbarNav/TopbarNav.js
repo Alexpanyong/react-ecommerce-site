@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import "./TopbarNav.scss";
 import { Link } from "react-router-dom";
 import { pageNames } from "../../shared/config/pageNames";
+import { routerPathNames } from "../../shared/config/routerPathNames";
 
 const TopbarNav = ({ currentPage, cart, handleSetCurrentPage, showMobileMenu, toggleMobileMenu }) => {
   return (
@@ -22,7 +23,7 @@ const TopbarNav = ({ currentPage, cart, handleSetCurrentPage, showMobileMenu, to
             }`}
             onClick={() => handleSetCurrentPage(pageNames.Home)}
           >
-            <Link className="navLink" to="/">
+            <Link className="navLink" to={routerPathNames.Home}>
               Home
             </Link>
           </li>
@@ -38,7 +39,7 @@ const TopbarNav = ({ currentPage, cart, handleSetCurrentPage, showMobileMenu, to
               }
             }}
           >
-            <Link className="navLink" to="/myorders">
+            <Link className="navLink" to={routerPathNames.MyOrders}>
               My Orders
             </Link>
           </li>
@@ -54,7 +55,7 @@ const TopbarNav = ({ currentPage, cart, handleSetCurrentPage, showMobileMenu, to
               }
             }}
           >
-            <Link className="navLink" to="/cart">
+            <Link className="navLink" to={routerPathNames.Cart}>
               Cart
               {cart.length > 0 && <span className="cartItemsNumber">{cart.length}</span>}
             </Link>
